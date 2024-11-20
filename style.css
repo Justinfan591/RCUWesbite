@@ -1,15 +1,16 @@
 /* General Styles */
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
 /* Header Section */
-.header {
+header {
     background-color: #004080;
     color: white;
-    padding-bottom: 20px;
 }
 
 .navbar {
@@ -44,16 +45,10 @@ body {
     border-radius: 5px;
 }
 
-.nav-links .sign-in:hover {
-    background-color: #003366;
-}
-
-/* Hero Section */
 .hero {
     text-align: center;
     color: white;
     padding: 50px 20px;
-    background-image: url('./assets/hero.jpg'); /* Add your image here */
     background-size: cover;
     background-position: center;
     height: 300px;
@@ -79,5 +74,52 @@ body {
 }
 
 .hero .cta-button:hover {
-    background-color: #003366;
+    background-color: #004080;
+}
+
+/* Main Content */
+.categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 40px 20px;
+}
+
+.category {
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.category img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.category h2 {
+    font-size: 20px;
+    color: #004080;
+    margin: 15px 0;
+}
+
+.category p {
+    font-size: 16px;
+    margin: 0 15px 15px;
+}
+
+.category .category-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0066cc;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+
+.category .category-link:hover {
+    background-color: #004080;
 }
