@@ -3,54 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RCU Virtual Assistant</title>
+    <title>RCU Personal Banking</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Header Section -->
     <header>
-        <nav>
+        <nav class="navbar">
             <div class="logo">Rotman Credit Union</div>
             <ul class="nav-links">
+                <li><a href="#">Personal</a></li>
+                <li><a href="#">Business</a></li>
+                <li><a href="#">Wealth</a></li>
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Contact</a></li>
-                <li><a href="#">Sign In</a></li>
+                <li><a href="#" class="sign-in">Sign In</a></li>
             </ul>
         </nav>
+        <div class="hero" style="background-image: url('assets/hero.jpg');">
+            <h1>Explore Personal Banking Solutions</h1>
+            <p>Find the right accounts, loans, and financial tools for your needs.</p>
+            <a href="#" class="cta-button">Get Started</a>
+        </div>
     </header>
 
-    <!-- Main Section -->
+    <!-- Main Content Section -->
     <main>
-        <h1>Welcome to RCU Virtual Assistant</h1>
-        <p>Please choose a category to proceed:</p>
-
-        <!-- Category Selection -->
-        <div class="categories">
-            <div class="category personal">
-                <h2>Personal</h2>
-                <p>For individual banking, loans, and inquiries.</p>
-                <button onclick="handleSelection('Personal')">Select Personal</button>
+        <section class="categories">
+            <div class="category">
+                <img src="assets/accounts.jpg" alt="Accounts">
+                <h2>Accounts</h2>
+                <p>Open a savings or checking account tailored to your needs.</p>
+                <a href="#" class="category-link">Learn More</a>
             </div>
-            <div class="category business">
-                <h2>Business</h2>
-                <p>For business banking, financing, and solutions.</p>
-                <button onclick="handleSelection('Business')">Select Business</button>
+            <div class="category">
+                <img src="assets/credit-cards.jpg" alt="Credit Cards">
+                <h2>Credit Cards</h2>
+                <p>Choose the best credit card for rewards and benefits.</p>
+                <a href="#" class="category-link">Learn More</a>
             </div>
-        </div>
-
-        <!-- Inquiry Form -->
-        <div id="inquiry-section" class="hidden">
-            <h2>What is the nature of your inquiry?</h2>
-            <textarea id="inquiry-text" placeholder="Type your inquiry here..."></textarea>
-            <button onclick="submitInquiry()">Submit Inquiry</button>
-        </div>
+            <div class="category">
+                <img src="assets/mortgages.jpg" alt="Mortgages">
+                <h2>Mortgages</h2>
+                <p>Get advice and tools to find the perfect mortgage for you.</p>
+                <a href="#" class="category-link">Learn More</a>
+            </div>
+            <div class="category">
+                <img src="assets/investing.jpg" alt="Investing">
+                <h2>Investing</h2>
+                <p>Grow your wealth with personalized investment solutions.</p>
+                <a href="#" class="category-link">Learn More</a>
+            </div>
+            <div class="category">
+                <img src="assets/loans.jpg" alt="Loans">
+                <h2>Loans</h2>
+                <p>Access personal loans with competitive rates.</p>
+                <a href="#" class="category-link">Learn More</a>
+            </div>
+            <div class="category">
+                <img src="assets/insurance.jpg" alt="Insurance">
+                <h2>Insurance</h2>
+                <p>Protect your family and assets with comprehensive insurance.</p>
+                <a href="#" class="category-link">Learn More</a>
+            </div>
+        </section>
     </main>
 
     <!-- Footer Section -->
     <footer>
         <p>&copy; 2024 Rotman Credit Union. All rights reserved.</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
