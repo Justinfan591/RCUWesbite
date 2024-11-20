@@ -1,24 +1,22 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
 }
 
 /* Header Section */
-header {
+.header {
     background-color: #004080;
     color: white;
-    padding: 20px 0;
+    padding-bottom: 20px;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    padding: 10px 20px;
 }
 
 .logo {
@@ -51,12 +49,17 @@ header {
 }
 
 .nav-links .sign-in:hover {
-    background-color: #004080;
+    background-color: #003366;
 }
 
+/* Hero Section */
 .hero {
     text-align: center;
-    padding: 40px 20px;
+    color: white;
+    padding: 50px 20px;
+    background-image: url('https://www.google.ca/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fphotos%2Fpeople-helping-people-bank&psig=AOvVaw3lfxnW8Kqh_-3u7TScHPgd&ust=1732160937368000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCLDxzL6A6okDFQAAAAAdAAAAABAE');
+    background-size: cover;
+    background-position: center;
 }
 
 .hero h1 {
@@ -70,62 +73,14 @@ header {
 }
 
 .hero .cta-button {
-    padding: 10px 20px;
     background-color: #0066cc;
     color: white;
+    padding: 10px 20px;
     text-decoration: none;
     font-size: 18px;
     border-radius: 5px;
 }
 
 .hero .cta-button:hover {
-    background-color: #004080;
-}
-
-/* Main Content */
-.categories {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 40px 20px;
-}
-
-.category {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.category h2 {
-    color: #004080;
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-.category p {
-    font-size: 16px;
-    margin-bottom: 20px;
-}
-
-.category .category-link {
-    text-decoration: none;
-    color: white;
-    background-color: #0066cc;
-    padding: 10px 20px;
-    border-radius: 5px;
-}
-
-.category .category-link:hover {
-    background-color: #004080;
-}
-
-/* Footer Section */
-footer {
-    background-color: #004080;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 40px;
+    background-color: #003366;
 }
