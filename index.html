@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Business Banking - RCU</title>
+    <title>RCU Virtual Assistant</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,7 +12,7 @@
         <nav>
             <div class="logo">Rotman Credit Union</div>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About Us</a></li>
                 <li><a href="#">Contact</a></li>
                 <li><a href="#">Sign In</a></li>
             </ul>
@@ -21,14 +21,36 @@
 
     <!-- Main Section -->
     <main>
-        <h1>Business Banking</h1>
-        <p>Discover our business banking services, including business loans, commercial accounts, and financial planning tools.</p>
-        <p><a href="index.html">Back to Home</a></p>
+        <h1>Welcome to RCU Virtual Assistant</h1>
+        <p>Please choose a category to proceed:</p>
+
+        <!-- Category Selection -->
+        <div class="categories">
+            <div class="category personal">
+                <h2>Personal</h2>
+                <p>For individual banking, loans, and inquiries.</p>
+                <button onclick="handleSelection('Personal')">Select Personal</button>
+            </div>
+            <div class="category business">
+                <h2>Business</h2>
+                <p>For business banking, financing, and solutions.</p>
+                <button onclick="handleSelection('Business')">Select Business</button>
+            </div>
+        </div>
+
+        <!-- Inquiry Form -->
+        <div id="inquiry-section" class="hidden">
+            <h2>What is the nature of your inquiry?</h2>
+            <textarea id="inquiry-text" placeholder="Type your inquiry here..."></textarea>
+            <button onclick="submitInquiry()">Submit Inquiry</button>
+        </div>
     </main>
 
     <!-- Footer Section -->
     <footer>
         <p>&copy; 2024 Rotman Credit Union. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
