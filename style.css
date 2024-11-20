@@ -1,16 +1,15 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
 }
 
 /* Header Section */
-header {
+.header {
     background-color: #004080;
     color: white;
+    padding-bottom: 20px;
 }
 
 .navbar {
@@ -33,6 +32,10 @@ header {
     padding: 0;
 }
 
+.nav-links li {
+    display: inline;
+}
+
 .nav-links a {
     color: white;
     text-decoration: none;
@@ -45,10 +48,16 @@ header {
     border-radius: 5px;
 }
 
+.nav-links .sign-in:hover {
+    background-color: #003366;
+}
+
+/* Hero Section */
 .hero {
     text-align: center;
     color: white;
     padding: 50px 20px;
+    background-image: url('./assets/hero.jpg'); /* Ensure correct path to the image */
     background-size: cover;
     background-position: center;
     height: 300px;
@@ -74,52 +83,37 @@ header {
 }
 
 .hero .cta-button:hover {
+    background-color: #003366;
+}
+
+/* Buttons Section */
+.buttons-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 30px 20px;
+}
+
+.main-button {
     background-color: #004080;
-}
-
-/* Main Content */
-.categories {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 40px 20px;
-}
-
-.category {
-    text-align: center;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: white;
-    overflow: hidden;
-}
-
-.category img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-}
-
-.category h2 {
-    font-size: 20px;
-    color: #004080;
-    margin: 15px 0;
-}
-
-.category p {
-    font-size: 16px;
-    margin: 0 15px 15px;
-}
-
-.category .category-link {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #0066cc;
     color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
     border-radius: 5px;
-    text-decoration: none;
-    margin-bottom: 15px;
+    cursor: pointer;
 }
 
-.category .category-link:hover {
+.main-button:hover {
+    background-color: #0066cc;
+}
+
+/* Footer Section */
+footer {
     background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 30px;
 }
