@@ -32,10 +32,6 @@ body {
     padding: 0;
 }
 
-.nav-links li {
-    display: inline;
-}
-
 .nav-links a {
     color: white;
     text-decoration: none;
@@ -57,9 +53,10 @@ body {
     text-align: center;
     color: white;
     padding: 50px 20px;
-    background-image: url('https://www.google.ca/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fphotos%2Fpeople-helping-people-bank&psig=AOvVaw3lfxnW8Kqh_-3u7TScHPgd&ust=1732160937368000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCLDxzL6A6okDFQAAAAAdAAAAABAE');
+    background-image: url('assets/hero.jpg'); /* Add your image here */
     background-size: cover;
     background-position: center;
+    height: 300px;
 }
 
 .hero h1 {
